@@ -1,0 +1,30 @@
+{
+  "tensorflow": {
+    "framework": "TensorFlow",
+    "models": {
+      "emotion": {
+        "ms_per_image": 69.7
+      }
+    }
+  },
+  "pytorch": {
+    "framework": "PyTorch",
+    "device": "cuda",
+    "models": {
+      "embedder": {
+        "ms_per_image": 17.98
+      },
+      "emotion": {
+        "ms_per_image": 13.48
+      },
+      "age_gen_eth": {
+        "ms_per_image": 16.45
+      }
+    }
+  },
+  "recommended": {
+    "age_gen_eth": "pytorch",
+    "embedder": "pytorch",
+    "emotion": "pytorch"
+  }
+}
